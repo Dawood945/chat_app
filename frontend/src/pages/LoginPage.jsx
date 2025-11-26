@@ -18,10 +18,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen grid lg:grid-cols-2">
+    <div className="min-h-screen pt-8 grid lg:grid-cols-2">
       {/* Left Side - Form */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
-        <div className="w-full max-w-md space-y-8">
+        <div className="w-full max-w-md space-y-4">
           {/* Logo */}
           <div className="text-center mb-8">
             <div className="flex flex-col items-center gap-2 group">
@@ -37,7 +37,7 @@ const LoginPage = () => {
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-medium">Email</span>
@@ -49,7 +49,7 @@ const LoginPage = () => {
                 <input
                   type="email"
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="you@example.com"
+                  placeholder="Enter your email..."
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
@@ -67,7 +67,7 @@ const LoginPage = () => {
                 <input
                   type={showPassword ? "text" : "password"}
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="••••••••"
+                  placeholder="Enter your password..."
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                 />
