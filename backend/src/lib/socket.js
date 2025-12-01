@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "https://chatapp-production-6adf.up.railway.app"],
+    origin: ["https://chat-app-black-tau.vercel.app", "http://localhost:5173"],
   },
 });
 

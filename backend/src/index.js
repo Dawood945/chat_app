@@ -22,9 +22,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:5173",
-             "https://chatapp-production-6adf.up.railway.app"
-    ],
+    origin: ["https://chat-app-black-tau.vercel.app", "http://localhost:5173"],
     credentials: true,
   })
 );
